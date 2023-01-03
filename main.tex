@@ -1,7 +1,5 @@
 \documentclass[12pt, a4paper]{article}
-%\usepackage{simplemargins}
 
-%\usepackage[square]{natbib}
 \usepackage{amsmath}
 \usepackage{afterpage}
 \usepackage{mathptmx}
@@ -23,7 +21,9 @@
 \usepackage{soul}
 \usepackage{float}
 \usepackage{titlesec}
-\usepackage{duckuments}
+
+\usepackage{siunitx}
+\DeclareSIUnit{\point}{pt}
 
 \usepackage[style=numeric-comp, sorting=none]{biblatex}
 \addbibresource{references.bib}
@@ -107,13 +107,13 @@ In preparing a manuscript, authors are solely responsible for the quality and ap
 \section{Specific instructions}
 
 \subsection{Text}
-Text should be typed at single spacing in Times New Roman or similar typeface, 12 point and fully justified. Plain white A4 paper should be used with margins of 30 mm on all sides. Typing should be on one side of the paper only and page numbers should be included at the bottom of the page on the right-hand side. The number on the first page should not be shown.
+Text should be typed at single spacing in Times New Roman or similar typeface, \(\SI{12}{\point}\) and fully justified. Plain white A4 paper should be used with margins of \(\SI{30}{\milli\metre}\) on all sides. Typing should be on one side of the paper only and page numbers should be included at the bottom of the page on the right-hand side. The number on the first page should not be shown.
 
 \subsection{Format}
-An introductory paragraph should be given after a first-level heading, followed by numbered subheadings. First-level headings should be in 14 point bold typeface; second-level headings 12 point bold italic; and third-level in 12 point italic. All headings should be left-justified. A Non-Breaking Space (Ctrl+Shift+Space) should be used between the number and the unit to avoid a break when the number is at the end of a line. References should be indicated with numbers in brackets~\cite{Tan1977}. The citation style is numbers in brackets~\cite{Tan1977,Auld1979,Koehler2006}.
+An introductory paragraph should be given after a first-level heading, followed by numbered subheadings. First-level headings should be in \(\SI{14}{\point}\) bold typeface; second-level headings \(\SI{12}{\point}\) bold italic; and third-level in \(\SI{12}{\point}\) italic. All headings should be left-justified. A Non-Breaking Space (Ctrl+Shift+Space) should be used between the number and the unit to avoid a break when the number is at the end of a line. References should be indicated with numbers in brackets~\cite{Tan1977}. The citation style is numbers in brackets~\cite{Tan1977,Auld1979,Koehler2006}.
 
 \subsubsection{Title and Author}
-The title should emphasise the objective of the paper. Avoid excessive length and use secondary titles only when necessary. The title should be in 14 point bold, sentence case (only the first letter of the first word capitalised except for proper nouns), centred on the width of the opening page and spaced 30 mm from the top of the page. Names of authors should be centred on the third line below the title. The name(s) should be shown as first name, middle initial, and last name or first initial, middle name, and last name, as preferred. Only the first letter of names should be capitalised. If there is only one author, his/her Affiliation, Country, E-mail should be single spaced below the name. If there is more than one author their names should appear in accordance to their contribution to the work described in the paper. In the event of different affiliations, these should be indicated by means of numbers in superscript. The main author is assumed to be the corresponding author and if not, please indicate this by underscoring the co-author that is.
+The title should emphasise the objective of the paper. Avoid excessive length and use secondary titles only when necessary. The title should be in \(\SI{14}{\point}\) bold, sentence case (only the first letter of the first word capitalised except for proper nouns), centred on the width of the opening page and spaced \(\SI{30}{\milli\metre}\) from the top of the page. Names of authors should be centred on the third line below the title. The name(s) should be shown as first name, middle initial, and last name or first initial, middle name, and last name, as preferred. Only the first letter of names should be capitalised. If there is only one author, his/her Affiliation, Country, E-mail should be single spaced below the name. If there is more than one author their names should appear in accordance to their contribution to the work described in the paper. In the event of different affiliations, these should be indicated by means of numbers in superscript. The main author is assumed to be the corresponding author and if not, please indicate this by underscoring the co-author that is.
 
 \subsubsection{Abstract}
 The abstract begins on the third line below the authors' names and addresses, as described above. The abstract should be typed in the same manner as the text. The abstract should clearly state the objective of the paper and should present salient conclusions in minimum 200 words and maximum 300 words.
@@ -133,7 +133,7 @@ Please type as much of the mathematical material as possible, with particular ca
 \end{equation}
 
 \subsection{Figures and graphs}
-Figures should be numbered and captioned, and should be included at appropriate positions within the text. They may be grouped together on separate pages within the text if desired, but please avoid large blank areas. Leave one line gap above and below figures and tables and do not put text to the side of them. Captions should be in bold but in 10 point, centred on the page. Lettering on line drawings should be large enough to be clearly legible.\\
+Figures should be numbered and captioned, and should be included at appropriate positions within the text. They may be grouped together on separate pages within the text if desired, but please avoid large blank areas. Leave one line gap above and below figures and tables and do not put text to the side of them. Captions should be in bold but in \(\SI{10}{\point}\), centred on the page. Lettering on line drawings should be large enough to be clearly legible.\\
 
 Coloured images are acceptable.
 \begin{figure}[H]
@@ -143,17 +143,17 @@ Coloured images are acceptable.
 \end{figure}
 
 \subsection{Tables}
-Tables must be cited in the text and should be included as close to the point of reference as possible, but tables should not continue from one page to the next unless a table begins at the beginning of a page (ie, a multi-page table). The table caption, in bold and 10 point, should always be centred with the table number above the table. Arabic numbers should be used for table numbers.
+Tables must be cited in the text and should be included as close to the point of reference as possible, but tables should not continue from one page to the next unless a table begins at the beginning of a page (ie, a multi-page table). The table caption, in bold and \(\SI{10}{\point}\), should always be centred with the table number above the table. Arabic numbers should be used for table numbers.
 
 \begin{table}[H]
   \centering
-  \caption{Table example.}\label{tab:my_label}
+  \caption{Table example}\label{tab:my_label}
   \begin{footnotesize}
     \begin{tabular}{p{6cm}p{8.7cm}}
       \hline
-      Item                  & Specifications                                                                                                                                                                                                             \\\hline
-      Table caption defined & The table caption, in bold and Times New Roman 10 point, should always be centred with the table number above the table.  Arabic numbers should be used for table numbers.  Do not end the table caption with a full stop. \\\hline
-      Table contents        & Preferred type font is Times New Roman 10 point.  Line spacing should be single space with one additional line of space between paragraphs.                                                                                \\\hline
+      Item                  & Specifications                                                                                                                                                                                                                        \\\hline
+      Table caption defined & The table caption, in bold and Times New Roman \(\SI{10}{\point}\), should always be centred with the table number above the table.  Arabic numbers should be used for table numbers.  Do not end the table caption with a full stop. \\\hline
+      Table contents        & Preferred type font is Times New Roman \(\SI{10}{\point}\).  Line spacing should be single space with one additional line of space between paragraphs.                                                                                \\\hline
     \end{tabular}
   \end{footnotesize}
 \end{table}
